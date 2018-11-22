@@ -8,6 +8,7 @@
 
 // Apply the scala plugin to add support for Scala
 apply plugin: 'scala'
+apply plugin: 'idea'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -28,3 +29,6 @@ dependencies {
     testRuntime 'org.scala-lang.modules:scala-xml_2.11:1.0.6'
 }
 
+idea {
+    targetVersion '13'
+}
